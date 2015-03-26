@@ -8,7 +8,14 @@
 (function (root, factory) {
   if (typeof exports === 'object') {
     // CommonJS
-    module.exports = factory(require('leaflet'));
+    if(typeof window !== 'undefined' && window.L) {
+			// If we've already imported leaflet in previously-executing code, *don't* do it again
+			// Importing leaflet is not idempotent (bad them!)
+			//
+      module.exports = factory(window.L);
+    } else {
+      module.exports = factory(require('leaflet'));
+    }
   } else {
     // Global Variables
     root.L.TileLayer.d3_topoJSON = factory(root.L);
