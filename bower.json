@@ -1,10 +1,11 @@
 {
   "name": "d3-topojson-layer",
   "main": "index.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/faradayio/d3-topojson-layer",
   "authors": [
-    "Tristan Davies <github@tristan.io>"
+    "Tristan Davies <github@tristan.io>",
+		"Nick Husher <nick@faraday.io>"
   ],
   "description": "topojson layer for leaflet with d3 rendering",
   "moduleType": [
