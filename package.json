@@ -1,6 +1,6 @@
 {
   "name": "d3-topojson-layer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "topojson layer for leaflet with d3 rendering",
   "main": "index.js",
   "repository": {

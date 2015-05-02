@@ -12,7 +12,7 @@
 			// If we've already imported leaflet in previously-executing code, *don't* do it again
 			// Importing leaflet is not idempotent (bad them!)
 			//
-      module.exports = factory(window.L, window.topojson);
+      module.exports = factory(window.L, require('topojson'));
     } else {
       module.exports = factory(require('leaflet'), require('topojson'));
     }
