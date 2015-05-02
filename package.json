@@ -1,6 +1,6 @@
 {
   "name": "d3-topojson-layer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "topojson layer for leaflet with d3 rendering",
   "main": "index.js",
   "repository": {
@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/faradayio/d3-topojson-layer",
   "dependencies": {
-    "leaflet": "^0.7.3"
+    "leaflet": "^0.7.3",
+    "topojson": "^1.6.0"
   }
 }
